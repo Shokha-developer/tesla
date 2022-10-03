@@ -10,10 +10,28 @@ let dwTmp = document.querySelector(".temp_down")
 let whUp = document.querySelector(".wh_up")
 let whDw = document.querySelector(".wh_down")
 let wh = document.querySelector(".wh")
+let door = document.querySelector(".door")
+let salonImg = document.querySelector(".tesla_img")
+let wheels = document.querySelector(".wheels")
+let h1 = document.querySelector(".main h1")
+let dNone = document.querySelector(".dNone")
+let colorbtns = document.querySelectorAll(".color")
+let clear = document.querySelector(".clear")
+let tesla_js = document.querySelector(".tesla_js")
+
+let colors = {
+    black: "./assets/images/image 10.png",
+    white: "./assets/images/image 9w.png",
+    capuccino: "./assets/images/image 8c.png",
+}
+
+
+
+
 
 let kmH1 = 60
 let km1 = 750
-let tmp1 = 20 
+let tmp1 = 20
 
 
 
@@ -70,11 +88,51 @@ function reload() {
            }
     }
 
+    door.onclick = () => {
+        // salonImg.innerHTML = ""
+        salonImg.classList.add("active")
+        console.log(salonImg);
+    }
+    
+    // Dw.onclick = () => {
+        //     if (wh.innerHTML = 20) {
+            //         wh.innerHTML--
+            //         prc.innerHTML = "$89,990"
+            //        }
+            // }
+            
 
 
 }
 
 reload()
+
+function open() {
+    salonImg.classList.add("active")
+    wheels.innerHTML = ""
+    h1.innerHTML = "Intire View"
+    dNone.style.display = "block"
+    clear.innerHTML = ""
+
+    let ul = document.createElement("ul")
+    let li = document.createElement("li")
+    let spanH = document.createElement("span")
+    let label = document.createElement("label")
+    let inp = document.createElement("input")
+    let spanSl = document.createElement("span")
+
+    label.classList.add("switch")
+    inp.classList.add("checkbox")
+    spanSl.classList.add("slider round")
+
+    label.append(inp, spanSl)
+    li.append(spanH, label)
+    clear.append(li)
+
+        }
+    });
+
+}
 
 
 
