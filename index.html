@@ -9,97 +9,95 @@
   </head>
   <body>
     <div id="root">
-        <div class="app">
-
-
-            <div class="header">
-                <img src="./assets/icons/tesla.svg" alt="">
-            </div>
-
-
-            <form class="main" name="fr">
-                <h1>Range Per Charge</h1>
-
-                
-                <div class="tesla_img">
-            <div class="door"></div>
-                    <div class="wheels">
-
-                        <div class="wheel_1 wheel"></div>
-                        <div class="wheel_2 wheel" ></div>
-                    </div>
-                </div>
-                
-
-                <div class="tesla_stats">
-                    <ul>
-                        <li>
-                            <span>Запас хода</span>
-                            <p class="km">750 KM</p>
-                        </li>
-                        <li>
-                            <span>Цена</span>
-                            <p class="prc">$89,990</p>
-                        </li>
-                    </ul>
-
-                </div>
-                <div class="tesla_js">
-                    <ul>
-                        <li>
-                            <span>Скорость автомобиля</span>
-                            <p class="kmH">60 км/ч</p>
-                        </li>
-                        <div class="btns">
-                            <button class="km_up st-u"></button>
-                            <button class="km_down st"></button>
-                        </div>
-                        <li>
-                            <span >Температура за окнами</span>
-                            <p class="tmp">20°</p>
-                        </li>
-                        <div class="btns">
-
-                            <button class="temp_up st-u"></button>
-                            <button class="temp_down st"></button>
-                        </div>
-                        <li>
-                            <span>Диски</span>
-                            <p class="wh">19</p>
-                        </li>
-                        <div class="btns">
-                            <button class="wh_up st-u"></button>
-                            <button class="wh_down st"></button>
-                        </div>
-
-                        <li>
-                            <span>Кондиционер</span>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                        </li>
-                        <li>
-                            <span>Версия Long Range</span>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                        </li>
-                        <li>
-                            <span>Вид автомобиля</span>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-            </form>
+      <div class="app">
+        <div class="header">
+          <img src="./assets/icons/tesla.svg" alt="" />
         </div>
+
+        <form class="main" name="fr">
+          <h1>Range Per Charge</h1>
+
+          <div class="tesla_img">
+            <div class="door"></div>
+            <div class="wheels">
+              <div class="wheel_1 wheel"></div>
+              <div class="wheel_2 wheel"></div>
+            </div>
+          </div>
+
+          <div class="tesla_stats">
+            <ul>
+              <li>
+                <span>Запас хода</span>
+                <p class="km">750 KM</p>
+              </li>
+              <li>
+                <span>Цена</span>
+                <p class="prc">$89,990</p>
+              </li>
+            </ul>
+          </div>
+          <div class="tesla_js">
+            <ul class="clear">
+              <li>
+                <span>Скорость автомобиля</span>
+                <p class="kmH">60 км/ч</p>
+              </li>
+              <div class="btns">
+                <button class="km_up st-u"></button>
+                <button class="km_down st"></button>
+              </div>
+              <li>
+                <span>Температура за окнами</span>
+                <p class="tmp">20°</p>
+              </li>
+              <div class="btns">
+                <button class="temp_up st-u"></button>
+                <button class="temp_down st"></button>
+              </div>
+              <li>
+                <span>Диски</span>
+                <p class="wh">19</p>
+              </li>
+              <div class="btns">
+                <button class="wh_up st-u"></button>
+                <button class="wh_down st"></button>
+              </div>
+
+              <li>
+                <span>Кондиционер</span>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </li>
+              <li>
+                <span>Версия Long Range</span>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </li>
+              <li>
+                <span>Вид автомобиля</span>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </li>
+            </ul>
+            <div class="dNone">
+              <span>Цвет салона</span>
+              <div class="colorBtns">
+                <button class="black color" data-color="black"></button>
+                <button class="white color" data-color="white"></button>
+                <button class="capuccino color" data-color="capuccino"></button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-
-
 
     <script src="./script.js"></script>
   </body>
